@@ -2,9 +2,17 @@
 
 ### Build the image
 ```sh
-docker build -t express-docker .
+docker build -t <nome_da_imagem> .
 ```
 ### Run the container
 ```sh
-docker run --rm -p 3000:3000 express-docker
+docker run --rm -p 3000:3000 <nome_da_imagem>
+```
+### Login to docker hub
+```sh
+docker login
+```
+### Upload the image to docker hub
+```sh
+docker push <nome_da_imagem>
 ```
